@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-const AddNote = () => {
+const AddNote = ({ handleAddNote }) => {
     const [noteText, setNoteText] = useState('');
 
     const handleChange = (e) => {
         setNoteText(e.target.value);
     };
 
-    const handleClick = () => {
-        
+    const handleSaveClick = () => {
+        handleAddNote(noteText);
     };
 
     return (
@@ -17,12 +17,12 @@ const AddNote = () => {
                 rows='8'
                 cols='10'
                 placeholder="Type to add a note..."
-                onChange={handleChange()}
+                onChange={handleChange}
                 value={noteText}
             ></textarea>
             <div className="note-footer">
                 <small>200 remaing</small>
-                <button className="save" onClick={handleSaveClick()}>Save</button>
+                <button className="save" onClick={handleSaveClick}>Save</button>
             </div>
         </div>
     )
