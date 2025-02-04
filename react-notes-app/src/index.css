@@ -35,6 +35,10 @@ code {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    & .delete-icon {
+      cursor: pointer;
+    }
   }
 }
 
