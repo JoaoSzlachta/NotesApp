@@ -3,6 +3,7 @@ import { nanoid } from 'nanoid';
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import NotesList from './components/NotesList'
+import SearchBar from './components/SearchBar'
 
 function App() {
   const [notes, setNotes] = useState([
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <div className='container'>
+      <SearchBar/>
       <NotesList
         notes={notes} 
         handleAddNote={addNote} 
