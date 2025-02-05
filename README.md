@@ -1,6 +1,22 @@
-- React Notes App
+# React Notes App
 
-This is a simple Notes App created for a casual React studying.
+A simple Notes App built with React for learning and exploring basic React concepts. This project allows users to create and delete notes with both light and dark themes.
 
-![Alt text](images/notesappBrightmode.png)
-![Alt text](images/notesappDarkmode.png)
+## Notes App in Light Mode
+![Notes App in Light Mode](images/notesappBrightmode.png)
+
+## Notes App in Dark Mode
+![Notes App in Dark Mode](images/notesappDarkmode.png)
+
+## Features
+
+- **Create Notes**: Easily add new notes with titles and content.
+- **Delete Notes**: Remove notes from the app as needed.
+- **Light & Dark Themes**: Toggle between light and dark mode to suit your preferences.
+- **Responsive Design**: The app works seamlessly across different screen sizes and devices.
+
+## Technologies Used
+
+- **HTML**: For building the web site structure
+- **React**: For building the user interface and managing state.
+- **CSS**: For styling the components and providing light/dark themes.
