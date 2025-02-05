@@ -20,3 +20,6 @@ A simple Notes App built with React for learning and exploring basic React conce
 - **HTML**: For building the web site structure
 - **React**: For building the user interface and managing state.
 - **CSS**: For styling the components and providing light/dark themes.
+
+## Credits
+This project was built with inspiration and code from [Chris Blakely](https://www.youtube.com/watch?v=8KB3DHI-QbM). I have modified the original code to suit my learning and experimentation needs.
