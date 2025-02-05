@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import NotesList from './components/NotesList'
 import SearchBar from './components/SearchBar'
+import Header from './components/Header'
 
 function App() {
   const [notes, setNotes] = useState([
@@ -15,6 +16,8 @@ function App() {
   ]);
 
   const [searchText, setSearchText] = useState('');
+
+  const [darkMode, setDarkMode] = useState(false);
 
   const addNote = (text) => {
     const date = new Date();
@@ -34,12 +37,15 @@ function App() {
   };
 
   return (
-    <div className='container'>
-      <SearchBar handleSearchNote={setSearchText}/>
-      <NotesList
-        notes={notes.filter((note) => note.text.toLowerCase().includes(searchText))} 
-        handleAddNote={addNote} 
-        handleDeleteNote={deleteNote}/>
+    <div className={`${darkMode  && 'dark-mode'}`}>
+      <div className='container'>
+        <Header handleToggleDarkMode={setDarkMode}/>
+        <SearchBar handleSearchNote={setSearchText}/>
+        <NotesList
+          notes={notes.filter((note) => note.text.toLowerCase().includes(searchText))}
+          handleAddNote={addNote}
+          handleDeleteNote={deleteNote}/>
+      </div>
     </div>
   )
 }
